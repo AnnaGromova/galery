@@ -19,7 +19,7 @@ createImgs();
 
 function slideLoad(i){
     var currentImg = document.getElementById(i);;
-    currentImg.style.display = "";
+    currentImg.style.display = "block";
 }
 
 function OpenImg(i){
