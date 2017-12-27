@@ -1,0 +1,125 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 260px;
+    width: 1200px;
+    margin: auto;
+}
+
+.miniatures {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+.miniImg {
+    background-size: cover;
+    display: inline-block;
+    height: 200px;
+    width: 318px;
+    margin: 30px 8px;
+}
+
+.switch {
+    margin: 0;
+    height: 100%;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0;
+}
+
+.switch:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left {
+    float: left;
+    left: 0;
+}
+
+.right {
+    float: right;
+    right: 0;
+}
+
+.imageBig {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.OneImg {
+    display: inline-block;
+    z-index: 11;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.switchImg {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 12;
+    background-color: inherit;
+    opacity: 0;
+    height: 100%;
+    width: 200px;
+    border: 0;
+}
+
+.switchImg:hover {
+    opacity: 0.9;
+}
+
+.switchImg:checked {
+    border: 0;
+}
+
+#imgBig {
+    position: absolute;
+    height: 96%;
+    width: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 1;
+}
+
+.buttonClose {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 13;
+    float: right;
+    height: 30px;
+    background-color: #000000;
+    opacity: 1;
+    color: #f6f6f6;
+}
