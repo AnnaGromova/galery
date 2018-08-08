@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font - family: 'OpenSans-SemiBold';
+    font-family: 'OpenSans-SemiBold';
     src: url('Fonts/OpenSans-SemiBold.eot');
     src: url('Fonts/OpenSans-SemiBold.woff2') format('woff2'), url('Fonts/OpenSans-SemiBold.woff') format('woff'), url('Fonts/OpenSans-SemiBold.ttf') format('truetype'), url('Fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
