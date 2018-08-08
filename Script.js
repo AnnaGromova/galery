@@ -36,10 +36,10 @@ for (var i = 0; i < 13; i++) {
 
 var game_table = document.querySelector(".game_table");
 for (var i = 0; i < 18; i++) {
-    var new_card = document.createElement("div");
-    new_card.classList.add("card", "card_face");
-    new_card.id = i;
-    game_table.appendChild(new_card);
+    var newCard = document.createElement("div");
+    newCard.classList.add("card", "card_face");
+    newCard.id = i;
+    game_table.appendChild(newCard);
     var new_card_image = document.createElement("img");
     new_card.appendChild(new_card_image);
 }
