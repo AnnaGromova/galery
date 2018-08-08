@@ -41,7 +41,7 @@ for (var i = 0; i < 18; i++) {
     newCard.id = i;
     game_table.appendChild(newCard);
     var new_card_image = document.createElement("img");
-    new_card.appendChild(new_card_image);
+    newCard.appendChild(new_card_image);
 }
 
 start_page.classList.add("is-displayed");
