@@ -60,16 +60,15 @@ function createTable() {
 
 function generateCardsSet() {
     let randomCards = new Array(18);
-    for (let i = 0; i < 9; i++) {
-        let randomNumber = Math.floor(Math.random() * 52);
-        randomCards[i] = cardsArray[randomNumber];
-        randomCards[i + 9] = cardsArray[randomNumber];
-    }
     randomValue = function (a, b) {
         return Math.random() - 0.5;
     }
-    let currentGameCards = randomCards.sort(randomValue);
-
+    let randomSortedCards = cardsArray.sort(randomValue);
+    for (let i=0; i < 9; i++) {
+        randomCards[i] = randomSortedCards[i];
+        randomCards[i + 9] = randomSortedCards[i];
+        }
+    randomCards.sort(randomValue);
     for (let i = 0; i < 18; i++) {
         let currentCard = document.getElementById(i);
         let cardFace = currentCard.firstChild;
