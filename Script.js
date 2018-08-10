@@ -100,8 +100,8 @@ function compareTheCards() {
         focusCards[1].style.opacity = "0";
     }
     else {
-        cardPair[0].close();
-        cardPair[1].close();
+        focusCards[0].close();
+        focusCards[1].close();
     }
     cardCounter = 0;
 }
