@@ -95,7 +95,7 @@ function ClickOnCard() {
 }
 
 function compareTheCards() {
-    if (focusCards[0].firstChild.src == cardPair[1].firstChild.src) {
+    if (focusCards[0].firstChild.src == focusCards[1].firstChild.src) {
         focusCards[0].style.opacity = "0";
         focusCards[1].style.opacity = "0";
     }
