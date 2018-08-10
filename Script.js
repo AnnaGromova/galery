@@ -42,7 +42,7 @@ startPage.classList.add("is-displayed");
 function createTable() {
     let gameTable = document.querySelector(".game-table ul");
     for (let i = 0; i < 18; i++) {
-        let newCard = document.createElement("li");
+        let newCard = document.createElement("div");
         newCard.classList.add("card");
         newCard.id = i;
         gameTable.appendChild(newCard);
