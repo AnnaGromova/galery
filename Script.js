@@ -90,7 +90,7 @@ function ClickOnCard() {
     if (cardCounter == 2) {
         this.open();
         focusCards[1] = this;
-        compareTheCards(focusCards);
+        setTimeout(compareTheCards(focusCards), 1000);
     }
 }
 
