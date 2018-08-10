@@ -90,14 +90,14 @@ function ClickOnCard() {
     if (cardCounter == 2) {
         this.open();
         focusCards[1] = this;
-        setTimeout(compareTheCards(focusCards), 1000);
+        setTimeout(compareTheCards(), 1000);
     }
 }
 
-function compareTheCards(cardPair) {
-    if (cardPair[0].firstChild.src == cardPair[1].firstChild.src) {
-        cardPair[0].style.opacity = "0";
-        cardPair[1].style.opacity = "0";
+function compareTheCards() {
+    if (focusCards[0].firstChild.src == cardPair[1].firstChild.src) {
+        focusCards[0].style.opacity = "0";
+        focusCards[1].style.opacity = "0";
     }
     else {
         cardPair[0].close();
