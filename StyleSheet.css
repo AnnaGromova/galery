@@ -116,7 +116,7 @@ body {
 }
 
 .game-table {
-    width: auto;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 -10px;
